@@ -43,8 +43,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/caddyfile"
-	"github.com/caddyserver/caddy/telemetry"
+	"github.com/gooseg17/caddy/tree/v1/caddyfile"
+	"github.com/gooseg17/caddy/tree/v1/telemetry"
 )
 
 // Configurable application parameters
