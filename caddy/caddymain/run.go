@@ -29,16 +29,16 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/caddyserver/caddy"
-	"github.com/caddyserver/caddy/caddyfile"
-	"github.com/caddyserver/caddy/caddytls"
-	"github.com/caddyserver/caddy/telemetry"
+	"github.com/gooseg17/caddy/tree/v1/"
+	"github.com/gooseg17/caddy/tree/v1/caddyfile"
+	"github.com/gooseg17/caddy/tree/v1/caddytls"
+	"github.com/gooseg17/caddy/tree/v1/telemetry"
 	"github.com/google/uuid"
 	"github.com/klauspost/cpuid"
 	"github.com/mholt/certmagic"
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"
 
-	_ "github.com/caddyserver/caddy/caddyhttp" // plug in the HTTP server type
+	_ "github.com/gooseg17/caddy/tree/v1/caddyhttp" // plug in the HTTP server type
 	// This is where other plugins get plugged in (imported)
 )
 
