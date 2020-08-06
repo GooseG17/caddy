@@ -1,11 +1,10 @@
-FROM alpine:latest
-RUN apk update && \
-  apk add git && \
-  apk add go && \ 
-  wget -O /root/caddy.tar.gz \
-    "https://github.com/GooseG17/caddy/archive/v1.zip" && \
-  tar -xf /root/caddy.tar.gz && \
-  mv /root/caddy-1/ /root/caddy/ && \
-  mkdir /root/caddy/build && \
-  touch /root/caddy/build/build.go && \
-  
+package main
+
+import (
+	"github.com/gooseg17/caddy/tree/v1/caddy/caddymain"
+	"github.com/freman/caddy-reauth"
+)
+
+func main() {
+	caddymain.Run()
+}
